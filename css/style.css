@@ -1,7 +1,15 @@
 body {
 	font-family: 'Roboto', sans-serif;
 }
+.vissualy-hidden {
+
+}
 .main-header {
+	min-width: 1440px;
+	height: 500px;
+	background-color: #eeeeee;
+}
+.header-inside {
 	width: 1440px;
 	height: 495px;
 	margin: 0 auto;
@@ -108,7 +116,7 @@ body {
 	left: 0;
 	margin-top: 0;
 	width: 1170px;
-	height: 413px;
+	height: 433px;
 	overflow: hidden;
 	background-color: #eeeeee;
 }
@@ -122,8 +130,9 @@ body {
 }
 .slide-text p {
 	margin-bottom: 40px;
+	width: 410px;
 }
-.slide-title {
+.slide-title-first {
 	font-size: 56px;
 	width: 400px;
 	height: 115px;
@@ -133,8 +142,26 @@ body {
 	font-weight: bold;
 	color: black;
 }
-
-
+.slide-title-second {
+	font-size: 56px;
+	width: 520px;
+	height: 115px;
+	margin-top: 48px;
+	margin-bottom: 20px;
+	line-height: 1;
+	font-weight: bold;
+	color: black;
+}
+.slide-title-thrid {
+	font-size: 56px;
+	width: 520px;
+	height: 115px;
+	margin-top: 48px;
+	margin-bottom: 20px;
+	line-height: 1;
+	font-weight: bold;
+	color: black;
+}
 .slide .read-more {
 	width: 240px;
 	text-transform: uppercase;
@@ -187,7 +214,7 @@ body {
 }
 .advantages {
 	width: 1440px;
-	height: 447px;
+	height: 535px;
 	margin: 0 auto;
 }
 .advantages-items {
@@ -230,4 +257,174 @@ body {
 }
 .advantages-items .yellow-button {
 	background-color: #f0cb54;
+}
+.about {
+	width: 1155px;
+	height: 478px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.about-us {
+	width: 655px;
+	height: 476px;
+}
+.about-us h2 {
+	font-size: 45px;
+	font-weight: bold;
+	margin-top: 35px;
+	margin-bottom: 30px;
+	line-height: 1;
+}
+.about-us h2 + p {
+ line-height: 1.5;
+}
+.about-us h3 {
+	font-size: 16px;
+	text-transform: uppercase;
+	line-height: 1;
+	margin-top: 45px;
+	margin-bottom: 28px;
+}
+.about-us h3 + p {
+	padding-left: 35px;
+	margin-bottom: 23px;
+	line-height: 1.5;
+	position: relative;
+}
+.about-us h3 + p:before {
+	content: '';
+	position: absolute;
+	top: 13px;
+	left: -2px;
+	width: 25px;
+	height: 2px;
+	background-image: url(../img/line.png);
+}
+
+.about-us p + p {
+	padding-left: 35px;
+	line-height: 1.9;
+	position: relative;
+}
+
+.about-us p + p:before {
+	content: '';
+	position: absolute;
+	top: 13px;
+	left: -2px;
+	width: 25px;
+	height: 2px;
+	background-image: url(../img/line.png);
+}
+
+.conditions {
+	width: 360px;
+	height: 415px;
+}
+.conditions h3 {
+    font-size: 16px;
+	text-transform: uppercase;
+	margin-top: 35px;
+	padding-left: 20px;
+}
+.conditions ul {
+	list-style-type: none;
+    padding-top: 25px;
+    margin-right: 12px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-left: 0;
+}
+.conditions li {
+	width: 107px;
+}
+.conditions sup {
+	font-size: 25px;
+}
+.conditions span {
+	font-size: 45px;
+	font-weight: bold;
+}
+.partners {
+	width: 1155px;
+	height: 175px;
+	margin: 0 auto;
+	}
+.partners ul {
+	list-style-type: none;
+	padding-left: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.partners li {
+	position: relative;
+}
+hr {
+	color: #eeeeee;
+}
+.partners li:before {
+	content: '';
+	position: absolute;
+	height: 50px;
+	width: 2px;
+   right: -20px;
+   top: 10px;
+	background-image: url(../img/verical-line.png);
+}
+.map {
+	width: 1100px;
+	margin: 0 auto;
+	height: 417px;
+	background-image: url(../img/map.png);
+}
+.modal {
+	height: 307px;
+	width: 320px;
+	background-color: white;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+.modal h3 {
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 53px;
+	padding-left: 50px;
+	margin-bottom: 30px;
+}
+.modal p {
+   padding-left: 50px;
+   margin-bottom: 25px;
+   width: 210px;
+}
+
+.modal-btn {
+	border: none;
+	background-color: #fb565a;
+	padding: 16px 45px;
+	text-transform: uppercase;
+	border-radius: 3px;
+	color: white;
+	margin-left: 50px;
+	margin-top: 10px;
+}
+.main-footer {
+	width: 1100px;
+	height: 220px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+.main-footer ul {
+	list-style-type: none;
+	width: 260px;
+	display: flex;
+	flex-direction: row;
 }
