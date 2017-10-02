@@ -31,7 +31,7 @@
 	<main class="container shop-container">
 	<div class="filters">
 		<form method="get">
-		<fieldset>
+		<fieldset class="price-filter">
 		 <legend>Стоимость</legend>
 			<div class="range-filter">
 				<div class="range-controls">
@@ -42,28 +42,27 @@
 					<div class="toggle togle-max"></div>
 				</div>
 				<div class="price-controls">
-				<label for="" class="min-price">
-				от
-				<input type="text">
-				</label>
-				<label for="" class="max-price">
-				до
-				<input type="text"></label>
+					<label class="min-price">от <input name="min-price" type="text" value="0"></label>
+					<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
 				</div>
 			</div>
 			</fieldset>
 			<fieldset>
 				<legend>Сетка</legend>
-				<input type="radio" id="adaptive" checked> <label for="adaptive">Адаптивная</label>
-				<input type="radio" id="fixed"><label for="fixed">Фиксированная</label>
+				<ul>
+					<li><input class="vissualy-hidden" type="radio" id="adaptive" checked> <label for="adaptive">Адаптивная</label></li>
+					<li><input class="vissualy-hidden" type="radio" id="fixed"><label for="fixed">Фиксированная</label></li>
+				</ul>
 			</fieldset>
 			<fieldset>
 				<legend>Особенности</legend>
-				<input type="checkbox">
-				<input type="checkbox">
-				<input type="checkbox">
-				<input type="checkbox">
-				<input type="checkbox">
+				<ul>
+					<li><input  class="vissualy-hidden" type="checkbox" id="slider" checked><label for="slider">Слайдер</label></li>
+					<li><input class="vissualy-hidden" type="checkbox" id="advantages"><label for="advantages">Блок преимуществ</label></li>
+					<li><input class="vissualy-hidden" type="checkbox" id="news" checked><label for="news">Новости</label></li>
+					<li><input class="vissualy-hidden" type="checkbox" id="gallery"><label for="gallery">Галерея</label></li>
+					<li><input class="vissualy-hidden" type="checkbox" id="cart"><label for="cart">Корзина</label></li>
+				</ul>
 			</fieldset>
 			<button type="submit">Показать</button>
 		</form>
